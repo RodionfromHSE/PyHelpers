@@ -1,0 +1,22 @@
+[
+    {
+        "word": "die Adresse",
+        "result": "{\n    \"part_of_speech\": \"noun\",\n    \"plural_or_null\": \"Adressen\",\n    \"example\": \"Meine Adresse ist 123 Hauptstraße.\",\n    \"example_en\": \"My address is 123 Main Street.\",\n    \"word_en\": \"address\",\n    \"meaning_en\": \"the details of where someone lives or works\"\n}"
+    },
+    {
+        "word": "anziehen",
+        "result": "{\n    \"part_of_speech\": \"verb\",\n    \"plural_or_null\": null,\n    \"example\": \"Ich ziehe mich warm an.\",\n    \"example_en\": \"I dress warmly.\",\n    \"word_en\": \"to dress\",\n    \"meaning_en\": \"to put on clothes\"\n}"
+    },
+    {
+        "word": "anders",
+        "result": "{\n    \"part_of_speech\": \"adj.\",\n    \"plural_or_null\": null,\n    \"example\": \"Das ist anders.\",\n    \"example_en\": \"That is different.\",\n    \"word_en\": \"different\",\n    \"meaning_en\": \"not the same as something else\"\n}"
+    },
+    {
+        "word": "Achtung",
+        "result": "{\n    \"part_of_speech\": \"noun\",\n    \"plural_or_null\": null,\n    \"example\": \"Achtung! Gefahr!\",\n    \"example_en\": \"Attention! Danger!\",\n    \"word_en\": \"Attention!\",\n    \"meaning_en\": \"the act of focusing on something or someone\"\n}"
+    },
+    {
+        "word": "alt",
+        "result": "{\n    \"part_of_speech\": \"adj.\",\n    \"plural_or_null\": null,\n    \"example\": \"Mein Auto ist alt.\",\n    \"example_en\": \"My car is old.\",\n    \"word_en\": \"old\",\n    \"meaning_en\": \"having lived for many years; not young\"\n}"
+    }
+]

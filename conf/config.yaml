@@ -1,0 +1,9 @@
+defaults:
+  - _self_
+  - dataset: null # /dataset/data; /dataset/result
+  - prompt: null
+  - model: null
+  - setup: null
+
+root: /Users/Rodion.Khvorostov/Desktop/Programming/Python/PythonPetProjects/PyHelpers
+secrets: ${root}/conf/secrets.json

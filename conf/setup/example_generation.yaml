@@ -1,0 +1,6 @@
+# @package _global_
+
+defaults:
+  - /dataset/result@dataset: de_a2_test
+  - override /prompt: german
+  - override /model: gpt_3.5_turbo

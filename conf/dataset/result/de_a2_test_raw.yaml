@@ -1,0 +1,11 @@
+name: de_a2_test
+
+keys_to_be_saved:  # keys to be saved among the input information in the result file
+  - word
+
+data_dir: ${root}/data
+words_file: ${.data_dir}/words/${.name}.csv
+
+result_dir: ${.data_dir}/results
+result_raw: ${.result_dir}/${.name}_raw.json
+result: ${.result_dir}/${.name}.json
