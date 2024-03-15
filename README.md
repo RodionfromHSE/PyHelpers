@@ -1,6 +1,9 @@
 # PyHelpers
 Collection of helpers for python developers (configuration structure, read-write utils, api utils)
 
+## Important
+
+In the `src/config_helpers.py` you need to change the `CONFIG_PATH` to the path of your configuration file.
 
 ## Helpers
 

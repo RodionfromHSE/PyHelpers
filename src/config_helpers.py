@@ -7,9 +7,13 @@ import typing as tp
 import os
 from hydra import initialize_config_dir, compose
 from copy import deepcopy
+import logging
 
-__ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+__ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../" * 2))
 __CONFIG_DIR = os.path.join(__ROOT_DIR, "conf")
+print(f"Added {__ROOT_DIR!r} to PYTHONPATH")
+print(f"Config dir: {__CONFIG_DIR!r}")
+
 
 def read_config(config_dir: str = __CONFIG_DIR, overrides: tp.Optional[tp.List[str]] = None) -> OmegaConf:
     """
