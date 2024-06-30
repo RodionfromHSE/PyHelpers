@@ -43,7 +43,7 @@ def read_json(path: str) -> tp.Union[tp.Dict, tp.List]:
     :param path: path to json file
     :return: json
     """
-    with open(path) as f:
+    with open(path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
@@ -56,7 +56,7 @@ def write_json(data: tp.Union[tp.Dict, tp.List], path: str, create_dirs: bool = 
     """
     if create_dirs:
         _create_dir(os.path.dirname(path))
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def append_json(path: str, data: tp.List[tp.Dict]) -> None:
@@ -78,7 +78,7 @@ def read_csv(path: str) -> pd.DataFrame:
     :param path: path to csv file
     :return: csv
     """
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf-8') as f:
         data = pd.read_csv(f)
     return data
 
@@ -91,7 +91,7 @@ def write_csv(data: pd.DataFrame, path: str, create_dirs: bool = True) -> None:
     """
     if create_dirs:
         _create_dir(os.path.dirname(path))
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         data.to_csv(f, index=False)
 
 def append_csv(path: str, data: tp.List[tp.Dict]) -> None:
@@ -106,10 +106,10 @@ def append_csv(path: str, data: tp.List[tp.Dict]) -> None:
     
     if not os.path.exists(path):
         _create_dir(os.path.dirname(path))
-        with open(path, 'w') as f:
+        with open(path, 'w', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=data[0].keys())
             writer.writeheader()
 
-    with open(path, 'a') as f:
+    with open(path, 'a', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=data[0].keys())
         writer.writerows(data)

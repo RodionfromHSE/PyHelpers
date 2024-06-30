@@ -17,4 +17,4 @@ class TemplatePrompter:
         self.template = template
 
     def get_prompt(self, **kwargs: tp.Any) -> str:
-        return self.smart_format(self.template, **kwargs)
+        return smart_format(self.template, **kwargs)
